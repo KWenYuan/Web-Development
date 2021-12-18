@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <title>
+        RGBA Colour Picker
+    </title>
+    <link rel="stylesheet" href="ColourPicker.css">
+</head>
+<body>
+    <div id="changeText">255, 255, 255, 1</div>
+    <br />
+    <div id="changeCol"></div>
+    <input type="range" id="rChoose" class="rangeSlider" min=0 max=255 value=255>
+    <label for="rChoose" class="rangeLabel">R value</label>
+    <label for="rChoose" id="rChooseNo" class="rangeNo">255</label>
+    <br />
+    <input type="range" id="gChoose" class="rangeSlider" min=0 max=255 value=255>
+    <label for="gChoose" class="rangeLabel">G value</label>
+    <label for="gChoose" id="gChooseNo" class="rangeNo">255</label>
+    <br />
+    <input type="range" id="bChoose" class="rangeSlider" min=0 max=255 value=255>
+    <label for="bChoose" class="rangeLabel">B value</label>
+    <label for="bChoose" id="bChooseNo" class="rangeNo">255</label>
+    <br />
+    <input type="range" id="aChoose" class="rangeSlider" min=0.0 max=1.0 step=0.1 value=1>
+    <label for="aChoose" class="rangeLabel">A value</label>
+    <label for="aChoose" id="aChooseNo" class="rangeNo">1</label>
+    <br />
+    <br />
+    <button id="copyCol" onclick="copyColFunc()">Copy colour code</button>
+    <button id="randomCol" onclick="randomColFunc()">Click to change colour</button>
+    <script src="Colourpicker.js"></script>
+</body>
+</html>
